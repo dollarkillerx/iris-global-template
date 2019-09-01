@@ -12,10 +12,17 @@ type myconf struct {
 		Host       string `yaml:"host"`
 		Debug      bool   `yaml:"debug"`
 		MaxRequest int    `yaml:"max_request"`
+		LogLevel   string `yaml:"log_level"`
 	}
 	Mysql struct {
 		Dsn   string `yaml:"dsn"`
 		Cache bool   `yaml:"cache"`
+	}
+	Pgsql struct{
+		Dsn   string `yaml:"dsn"`
+		MaxIdle int `yaml:"max_idle"`
+		MaxOpen int `yaml:"max_open"`
+		TimeOut time.Duration `yaml:"time_out"`
 	}
 	Redis struct {
 		Maxidle     int           `yaml:"maxidle"`
