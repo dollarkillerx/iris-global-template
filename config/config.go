@@ -18,10 +18,10 @@ type myconf struct {
 		Dsn   string `yaml:"dsn"`
 		Cache bool   `yaml:"cache"`
 	}
-	Pgsql struct{
-		Dsn   string `yaml:"dsn"`
-		MaxIdle int `yaml:"max_idle"`
-		MaxOpen int `yaml:"max_open"`
+	Pgsql struct {
+		Dsn     string        `yaml:"dsn"`
+		MaxIdle int           `yaml:"max_idle"`
+		MaxOpen int           `yaml:"max_open"`
 		TimeOut time.Duration `yaml:"time_out"`
 	}
 	Redis struct {

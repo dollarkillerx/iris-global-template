@@ -1,8 +1,8 @@
 package redis_conn
 
 import (
-	"iris-global-template/config"
 	"github.com/gomodule/redigo/redis"
+	"iris-global-template/config"
 	"log"
 	"time"
 )
@@ -39,4 +39,3 @@ func newRedisPool() *redis.Pool {
 		},
 	}
 }
-

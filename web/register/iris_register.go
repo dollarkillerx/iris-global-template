@@ -1,12 +1,12 @@
 package register
 
 import (
-	"iris-global-template/config"
-	"iris-global-template/web/middleware"
-	"iris-global-template/web/router"
 	"github.com/kataras/iris"
 	"github.com/kataras/iris/middleware/logger"
 	recover2 "github.com/kataras/iris/middleware/recover"
+	"iris-global-template/config"
+	"iris-global-template/web/middleware"
+	"iris-global-template/web/router"
 )
 
 func Iris() *iris.Application {

@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"iris-global-template/config"
 	"github.com/kataras/iris"
+	"iris-global-template/config"
 )
 
 var (

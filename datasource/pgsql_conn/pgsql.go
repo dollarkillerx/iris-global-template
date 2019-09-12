@@ -1,16 +1,16 @@
 package pgsql_conn
 
 import (
-	"iris-global-template/config"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm"
+	"iris-global-template/config"
 	"log"
 	"time"
 )
 
 var (
 	PgDb *gorm.DB
-	err error
+	err  error
 )
 
 func init() {
